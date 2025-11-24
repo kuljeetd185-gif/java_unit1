@@ -1,0 +1,22 @@
+
+import java.util.Scanner;
+
+class SwitchCaseDemo {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. Monday\n2. Tuesday\n3. Wednesday\n4. Thursday\n5. Fri\n6. Sat\n7. Sunday");
+        System.out.print("Enter day number (1-7): ");
+        int day = sc.nextInt();
+        switch (day) {
+            case 1 -> System.out.println("Today is Monday");
+            case 2 -> System.out.println("Today is Tuesday");
+            case 3 -> System.out.println("Today is Wednesday");
+            case 4 -> System.out.println("Today is Thursday");
+            case 5 -> System.out.println("Today is Friday");
+            case 6 -> System.out.println("Today is Saturday");
+            case 7 -> System.out.println("Today is Sunday");
+            default -> System.out.println("Invalid day number!");
+        }
+    }
+}
